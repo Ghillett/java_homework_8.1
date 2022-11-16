@@ -31,9 +31,9 @@ public class Post {
     public void setBirthDate(int day, int month, int year) {
         if (day > 0 && month > 0 && year > 0) {
             FormDate birthDate = new FormDate();
-            FormDate.birthDay = day;
-            FormDate.birthMonth = month;
-            FormDate.birthYear = year;
+            birthDate.setBirthDay(day);
+            birthDate.setBirthMonth(month);
+            birthDate.setBirthYear(year);
         }
     }
 }
