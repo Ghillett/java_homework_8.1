@@ -5,6 +5,7 @@ public class Post {
     private String passport;
     private String phone;
     private boolean subscription;
+    FormDate birthDate = new FormDate();
 
     public void setFullName(String surname, String name, String patronymic) {
         this.surname = surname;
@@ -30,7 +31,6 @@ public class Post {
 
     public void setBirthDate(int day, int month, int year) {
         if (day > 0 && month > 0 && year > 0) {
-            FormDate birthDate = new FormDate();
             birthDate.setBirthDay(day);
             birthDate.setBirthMonth(month);
             birthDate.setBirthYear(year);
